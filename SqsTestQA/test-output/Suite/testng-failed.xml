@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="EuroToPoundConversionTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://www.xe.com/currencyconverter/"/>
+    <classes>
+      <class name="com.sqs.qa.pages.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testEuroToPound" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.sqs.qa.pages.HomePageTest -->
+    </classes>
+  </test> <!-- EuroToPoundConversionTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="EuroToPoundConversionTest">
+      <parameter name="browser" value="Firefox"/>
+      <parameter name="url" value="http://www.xe.com/currencyconverter/"/>
+    <classes>
+      <class name="com.sqs.qa.pages.HomePageTest">
+      <methods>
+        <include name="testEuroToPound"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
